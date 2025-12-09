@@ -18,6 +18,9 @@ fig_hist = px.histogram(df, x="repairAmount", nbins=30,
                         title="Distribution of Repair Amounts")
 st.plotly_chart(fig_hist)
 
+st.markdown("*Insight:* Most TSA Eligible recepients received 1000 to 3000 dollars in aid money, with the highest aid amount being 35 to 37 thousand dollars, "
+
+            "signifying that most recipients don't receive enough money for major repairs.")
 # --- Boxplot of Repair Amount by TSA Eligibility ---
 st.subheader("Boxplot: Repair Amount by TSA Eligibility")
 fig_box = px.box(df, x="tsaEligible", y="repairAmount",
@@ -30,3 +33,5 @@ st.markdown("*Insight:* TSA-eligible households tend to have higher repair amoun
 
             "but variability is large.")
 
+# --- Authors ---
+st.write("Authors: Darren Cantor")
