@@ -6,7 +6,7 @@ import plotly.express as px
 st.title("FEMA Disaster Relief Dashboard")
 
 # --- Load FEMA dataset ---
-df = pd.read_csv("https://www.fema.gov/api/openfema/data/IndividualAssistanceHousingRegistrantsLargeDisasters.csv")
+df = pd.read_csv("fema_sample.csv")
 
 # --- Data Preview ---
 st.subheader("Data Preview")
@@ -29,3 +29,4 @@ st.plotly_chart(fig_box)
 st.markdown("*Insight:* TSA-eligible households tend to have higher repair amounts, "
 
             "but variability is large.")
+
